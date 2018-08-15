@@ -16,9 +16,26 @@ def longest_word():
         if len(i) > count: #Checking for the longest word(string)
             count = len(i)
             word = i
-            print ("the longest string is " + word)
         else:
-            print("No longest")
+            word =results[0] +"\n" + results[1]
+    return ("the longest string is " + word)
 
 
-longest_word()
+#call the function
+print(longest_word())
+
+
+
+
+
+#to be incorporated to the larger code
+totalEntries = len(lstName)
+  currentEntry = 0
+  longestLength = 0
+  while currentEntry < totalEntries:
+    thisEntry = len(str(lstName[currentEntry]))
+    if int(thisEntry) > int(longestLength):
+      longestLength = thisEntry
+      longestEntry = currentEntry
+    currentEntry += 1
+  return longestLength
