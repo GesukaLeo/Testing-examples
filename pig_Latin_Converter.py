@@ -16,6 +16,6 @@ def pigyLatin(text):
         
     return " ".join(new)
        
-print(pigyLatin("Pig latin is cool") == "igPay atinlay siay oolcay")
-print(pigyLatin("Quis custodiet ipsos custodes ?") == "uisQay ustodietcay psosiay ustodescay ?")
-print(pigyLatin("O emporat o mores !") == "Oay mporateay oay oresmay !")
+print(pigyLatin("Pig latin is cool"))
+print(pigyLatin("Quis custodiet ipsos custodes ?"))
+print(pigyLatin("O emporat o mores !"))
