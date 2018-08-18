@@ -1,21 +1,15 @@
-def pigyLatin(text):
-    #Read the text range
-    alpha = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ0123456789"
-    text = text.split(" ")
-    new = []
-    
-    for i in range(len(text)):
-        if text[i] in alpha and len(text[i]) == 1:
-            text[i] = text[i]+ "ay"
-            
-        elif len(text[i]) >= 2:
-            text[i] = text[i][1: -1]+ text[i][-1]+  text[i][0]+ "ay"
-        
-        else: text[i] = text[i]
-        new.append(text[i])
-        
-    return " ".join(new)
-       
-print(pigyLatin("Pig latin is cool"))
-print(pigyLatin("Quis custodiet ipsos custodes ?"))
-print(pigyLatin("O emporat o mores !"))
+#Pig latin translator program
+original ="akuseg"
+pgy = "ay"
+pgy2 = "way"
+
+word = original.lower()
+
+#check for starting letter using regular expressions
+first = word[0]
+if first in 'aeiou':
+    newword = word + pgy2
+    print(newword)
+else:
+    newword = word + first + pgy
+    print(newword[1:])

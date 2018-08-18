@@ -5,7 +5,7 @@ def longest_word():
     
     y=input("Enter any Second word of your choice \n")
     
-    #check for longest word in the list 
+    #check for longest word as keyed in
     if(len(x)>len(y)):
         print("The longest word is :",x)
     elif(len(y)>len(x)):
