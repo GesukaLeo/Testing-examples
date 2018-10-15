@@ -1,5 +1,5 @@
 #Pig latin translator program
-original ="akuseg"
+original ="INCENT"
 pgy = "ay"
 pgy2 = "way"
 
